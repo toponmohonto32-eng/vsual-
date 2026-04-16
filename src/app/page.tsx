@@ -28,6 +28,7 @@ import {
 } from "lucide-react"
 import { services, processSteps, testimonials, stats, WHATSAPP_LINK, CALENDLY_LINK } from "@/lib/data"
 import { useAuthStore } from "@/store/auth"
+import { useGHLTracking, trackFormSubmission, trackCTAClick, trackBookingIntent } from "@/lib/ghl-tracking"
 
 export default function LandingPage() {
   const router = useRouter()
@@ -38,6 +39,9 @@ export default function LandingPage() {
   const { scrollYProgress } = useScroll()
   const y = useTransform(scrollYProgress, [0, 1], [0, -50])
 
+  // Initialize GHL tracking
+  useGHLTracking()
+
   const handleContactSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
@@ -46,13 +50,16 @@ export default function LandingPage() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(contactForm),
+        body: JSON.stringify({ ...contactForm, source: "Landing Page Contact Form" }),
       })
       if (res.ok) {
+        // Track form submission with GHL
+        trackFormSubmission("contact_form", { email: contactForm.email, name: contactForm.name })
         toast.success("Message sent! We'll get back to you soon.")
         setContactForm({ name: "", email: "", subject: "", message: "" })
       }
     } catch (error) {
+      trackFormSubmission("contact_form", { email: contactForm.email, name: contactForm.name })
       toast.success("Message sent! We'll get back to you soon.")
       setContactForm({ name: "", email: "", subject: "", message: "" })
     } finally {
@@ -276,7 +283,10 @@ export default function LandingPage() {
             >
               <Button
                 size="lg"
-                onClick={() => window.open(CALENDLY_LINK, "_blank")}
+                onClick={() => {
+                  trackBookingIntent("hero_cta")
+                  window.open(CALENDLY_LINK, "_blank")
+                }}
                 className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-lg px-8 h-14 rounded-xl shadow-lg shadow-pink-500/25"
               >
                 <Calendar className="mr-2 w-5 h-5" />
@@ -568,7 +578,10 @@ export default function LandingPage() {
                 <Button
                   size="lg"
                   className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-lg px-8 h-14 rounded-xl"
-                  onClick={() => window.open(CALENDLY_LINK, "_blank")}
+                  onClick={() => {
+                    trackBookingIntent("cta_section")
+                    window.open(CALENDLY_LINK, "_blank")
+                  }}
                 >
                   <Calendar className="mr-2 w-5 h-5" />
                   Book Free Call
