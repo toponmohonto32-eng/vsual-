@@ -15,24 +15,24 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://vsualdigitalmedia.com"),
-  title: "Visual Digital Media - Transform Your Business Growth",
+  title: "VSUAL - Transform Your Business Growth",
   description: "We build intelligent automation systems, stunning websites, and growth engines that accelerate your business to the next level. Business automation, lead generation, and digital marketing solutions.",
-  keywords: ["Visual Digital Media", "Business Automation", "Lead Generation", "Website Development", "Growth Engine", "Digital Marketing", "AI Automation", "CRM"],
-  authors: [{ name: "Visual Digital Media" }],
+  keywords: ["VSUAL", "Visual Digital Media", "Business Automation", "Lead Generation", "Website Development", "Growth Engine", "Digital Marketing", "AI Automation", "CRM"],
+  authors: [{ name: "VSUAL" }],
   icons: {
     icon: "/logo.png",
   },
   openGraph: {
-    title: "Visual Digital Media - Transform Your Business Growth",
+    title: "VSUAL - Transform Your Business Growth",
     description: "We build intelligent automation systems, stunning websites, and growth engines that accelerate your business to the next level.",
     url: "https://vsualdigitalmedia.com",
-    siteName: "Visual Digital Media",
+    siteName: "VSUAL",
     type: "website",
     images: ["/logo.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Visual Digital Media - Transform Your Business Growth",
+    title: "VSUAL - Transform Your Business Growth",
     description: "We build intelligent automation systems, stunning websites, and growth engines that accelerate your business to the next level.",
   },
 };

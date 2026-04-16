@@ -63,7 +63,7 @@ export default function ClientLayout({
         {/* Logo */}
         <div className="h-16 flex items-center px-4 border-b border-white/5">
           <Link href="/" className="flex items-center gap-3">
-            <img src="/logo.png" alt="Visual Digital Media Logo" className="w-10 h-10 rounded-lg object-contain" />
+            <img src="/logo.png" alt="VSUAL Logo" className="w-10 h-10 rounded-lg object-contain" />
             <span className="font-bold text-white">Client Portal</span>
           </Link>
         </div>
@@ -86,7 +86,7 @@ export default function ClientLayout({
       {/* Mobile Header */}
       <div className="lg:hidden fixed top-0 left-0 right-0 h-16 bg-[#12121a] border-b border-white/5 flex items-center justify-between px-4 z-30">
         <Link href="/" className="flex items-center gap-3">
-          <img src="/logo.png" alt="Visual Digital Media Logo" className="w-10 h-10 rounded-lg object-contain" />
+          <img src="/logo.png" alt="VSUAL Logo" className="w-10 h-10 rounded-lg object-contain" />
           <span className="font-bold text-white">Client Portal</span>
         </Link>
 

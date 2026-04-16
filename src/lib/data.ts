@@ -198,7 +198,7 @@ export const testimonials = [
   {
     name: "Sarah Johnson",
     role: "CEO, TechStart Inc.",
-    content: "Visual Digital Media transformed our entire digital presence. The automation systems they built saved us 20+ hours per week.",
+    content: "VSUAL transformed our entire digital presence. The automation systems they built saved us 20+ hours per week.",
     rating: 5,
   },
   {

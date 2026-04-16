@@ -20,7 +20,7 @@ export async function POST() {
         role: 'admin',
         department: 'Management',
         status: 'online',
-        bio: 'Founder & CEO of Visual Digital Media',
+        bio: 'Founder & CEO of VSUAL',
         location: 'Los Angeles, CA',
         timezone: 'America/Los_Angeles',
         isActive: true,

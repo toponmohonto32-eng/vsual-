@@ -158,10 +158,10 @@ export default function LoginPage() {
               <Sparkles className="absolute top-0 left-1/2 -translate-x-1/2 w-4 h-4 text-pink-400" />
               <Sparkles className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3 h-3 text-purple-400" />
             </motion.div>
-            <img src="/logo.png" alt="Visual Digital Media Logo" className="w-16 h-16 rounded-xl shadow-2xl shadow-pink-500/30 object-contain bg-white" />
+            <img src="/logo.png" alt="VSUAL Logo" className="w-16 h-16 rounded-xl shadow-2xl shadow-pink-500/30 object-contain bg-white" />
           </motion.div>
           <h1 className="mt-4 text-2xl font-bold bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
-            Visual Digital Media
+            VSUAL
           </h1>
         </motion.div>
 

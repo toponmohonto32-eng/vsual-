@@ -51,8 +51,8 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <Link href="/" className="flex items-center gap-3">
-              <img src="/logo.png" alt="Visual Digital Media Logo" className="w-10 h-10 rounded-lg object-contain" />
-              <span className="font-bold text-lg text-white hidden sm:block">Visual Digital Media</span>
+              <img src="/logo.png" alt="VSUAL Logo" className="w-10 h-10 rounded-lg object-contain" />
+              <span className="font-bold text-lg text-white hidden sm:block">VSUAL</span>
             </Link>
 
             <div className="hidden md:flex items-center gap-3">
@@ -213,8 +213,8 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-3">
-              <img src="/logo.png" alt="Visual Digital Media Logo" className="w-8 h-8 rounded-lg object-contain" />
-              <span className="text-gray-400">© 2024 Visual Digital Media</span>
+              <img src="/logo.png" alt="VSUAL Logo" className="w-8 h-8 rounded-lg object-contain" />
+              <span className="text-gray-400">© 2024 VSUAL</span>
             </div>
             <div className="flex items-center gap-4 text-sm text-gray-400">
               <a href="mailto:info.vsualdm@gmail.com" className="hover:text-white">info.vsualdm@gmail.com</a>
